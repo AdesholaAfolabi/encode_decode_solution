@@ -2,7 +2,7 @@
 
 This README documents the steps that are necessary to encode and decode a specific string given a dictionary of words.
 This is validated by a couple of test cases. Instructions to run the code and set up the proper environment can be found
-in the notebook.
+in the notebook(test_notebook.ipynb).
 
 ### What is this repository for? ###
 
