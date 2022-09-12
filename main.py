@@ -106,12 +106,12 @@ class TestAliceMessage(unittest.TestCase):
         self.assertEqual(self.alice.decode("eestHwAAhisnliB yiso ncib"), "HiBobthisisAliceAnynews")
         
     def test_isSafe(self):
-      Dict = ['hi', 'this', 'news', 'alice', 'ice', 'sis', 'bob', 'any', 'is']
+      _dict = ['hi', 'this', 'news', 'alice', 'ice', 'sis', 'bob', 'any', 'is']
       decoded = 'HiBobthisisAliceAnynews'
-      self.assertTrue(self.alice.isSafe(decoded, Dict))
-      self.assertFalse(self.alice.isSafe("HiBobthisisAliceAnynew", Dict))
+      self.assertTrue(self.alice.isSafe(decoded, _dict))
+      self.assertFalse(self.alice.isSafe("HiBobthisisAliceAnynew", _dict))
       self.assertFalse(self.alice.isSafe(decoded, []))
-      self.assertTrue(self.alice.isSafe('', Dict))
+      self.assertTrue(self.alice.isSafe('', _dict))
       
 if __name__ == '__main__':
     unittest.main()
